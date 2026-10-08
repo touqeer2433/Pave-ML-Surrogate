@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Flexible Pavement Strain & Life Predictor"
+authors:
+  - family-names: Rind
+    given-names: Touqeer Ali
+version: 1.0.0
+date-released: 2026-10-08
+license: MIT
