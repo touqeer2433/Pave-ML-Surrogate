@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 
 class Predictor:
-    def __init__(self, folder=os.path.join(HERE, "model")):
+    def __init__(self, folder=HERE):
         with open(os.path.join(folder, "meta.json"), encoding="utf-8") as f:
             self.meta = json.load(f)
         self.model = torch.jit.load(os.path.join(folder, "pavement_ann.pt"), map_location="cpu").eval()
